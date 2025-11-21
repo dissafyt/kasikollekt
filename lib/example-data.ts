@@ -1,0 +1,196 @@
+export interface Product {
+  id: string
+  title: string
+  brand: string
+  brandId: string
+  price: number
+  image: string
+  category: string
+  description: string
+  colors: string[]
+  sizes: string[]
+  inStock: boolean
+  featured?: boolean
+}
+
+export const exampleProducts: Product[] = [
+  {
+    id: "1",
+    title: "Kasi Vibes Graphic Tee",
+    brand: "Urban Roots",
+    brandId: "brand-1",
+    price: 299,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Streetwear",
+    description: "Bold streetwear design celebrating township culture with vibrant graphics and authentic Kasi energy.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    id: "2",
+    title: "Township Dreams Print",
+    brand: "Local Legends",
+    brandId: "brand-2",
+    price: 349,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Art",
+    description: "Artistic expression of township life through contemporary design and bold visual storytelling.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    id: "3",
+    title: "Mzansi Music Tee",
+    brand: "Sound Culture",
+    brandId: "brand-3",
+    price: 279,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Music",
+    description: "Celebrate South African music culture with this tribute to the sounds that define our nation.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    id: "4",
+    title: "Street Soccer Legend",
+    brand: "Kasi Sports",
+    brandId: "brand-4",
+    price: 329,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Sports",
+    description: "Honoring the legends of street soccer and the passion that drives township sports culture.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    id: "5",
+    title: "Heritage Pride Design",
+    brand: "Urban Roots",
+    brandId: "brand-1",
+    price: 299,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Streetwear",
+    description: "Wear your heritage with pride through designs that celebrate South African identity and culture.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    id: "6",
+    title: "Amapiano Wave Tee",
+    brand: "Sound Culture",
+    brandId: "brand-3",
+    price: 349,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Music",
+    description: "Ride the Amapiano wave with this design celebrating South Africa's hottest music genre.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    id: "7",
+    title: "Graffiti Culture Print",
+    brand: "Local Legends",
+    brandId: "brand-2",
+    price: 279,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Art",
+    description: "Street art meets fashion in this bold graffiti-inspired design celebrating urban creativity.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    id: "8",
+    title: "Hustle & Heart Tee",
+    brand: "Urban Roots",
+    brandId: "brand-1",
+    price: 299,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Streetwear",
+    description: "For those who hustle with heart - a design celebrating the entrepreneurial spirit of the township.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+    featured: true,
+  },
+  {
+    id: "9",
+    title: "Kwaito Legends Tribute",
+    brand: "Sound Culture",
+    brandId: "brand-3",
+    price: 329,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Music",
+    description: "Paying homage to the Kwaito legends who shaped South African music and culture.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+  },
+  {
+    id: "10",
+    title: "Basketball Dreams",
+    brand: "Kasi Sports",
+    brandId: "brand-4",
+    price: 299,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Sports",
+    description: "From township courts to big dreams - celebrating the basketball culture of South Africa.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+  },
+  {
+    id: "11",
+    title: "Abstract Kasi Art",
+    brand: "Local Legends",
+    brandId: "brand-2",
+    price: 349,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Art",
+    description: "Contemporary abstract art inspired by the vibrant colors and energy of township life.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+  },
+  {
+    id: "12",
+    title: "Urban Explorer Tee",
+    brand: "Urban Roots",
+    brandId: "brand-1",
+    price: 279,
+    image: "/placeholder.svg?height=400&width=400",
+    category: "Streetwear",
+    description: "For the urban explorers navigating the streets and stories of South African townships.",
+    colors: ["black", "white"],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    inStock: true,
+  },
+]
+
+export const categories = ["All", "Streetwear", "Music", "Sports", "Art"]
+
+export const brands = [
+  { id: "all", name: "All Brands" },
+  { id: "brand-1", name: "Urban Roots" },
+  { id: "brand-2", name: "Local Legends" },
+  { id: "brand-3", name: "Sound Culture" },
+  { id: "brand-4", name: "Kasi Sports" },
+]
+
+export const admin_users = [
+  { username: "super_user", password: "rootpass_sup" },
+  { username: "dissafyt@gmail.com", password: "rootpass_sup" }
+]
